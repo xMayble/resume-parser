@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import Navbar from './Components/Navbar';
 import './App.css';
 
+// main function for program to run
 function App() {
   return (
     <div>
@@ -10,5 +10,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
