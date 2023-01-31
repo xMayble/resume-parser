@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
+import './FileInput.css';
 
 function FileInput() {
     const [file, setFile] = useState(null);
 
     const handleFileUpload = (event) => {
         setFile(event.target.files[0]);
+        console.log('File Uploaded:', file.name);
     };
 
     return (
-        <div>
+        <div className='file-input'>
             <label htmlFor='file-upload'>
-                <button>Upload Resume</button>
+                Upload Resume
             </label>
 
             <input 
